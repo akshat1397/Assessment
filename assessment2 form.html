@@ -15,6 +15,7 @@
             background-color: #bfbfbf;
             box-sizing: border-box;
         }
+
         i {
             background-color: white;
             padding: 1px;
@@ -25,38 +26,39 @@
         }
     </style>
 </head>
+
 <body>
     <form method="post" onsubmit=" return validation()">
         <caption><b> REGISTRATION FORM</b> </caption>
         <br><br> <br>
         <tr>
-            <td>    First Name:</td>
-            <td> <i class="fa-solid fa-user"></i> <input type="text" placeholder="First Name" id="fname" style="width: 300px; padding: 5px 5px 5px 50px;"
-                    onkeydown="FirstNameValid(this,'ferror')">
+            <td> First Name:</td>
+            <td> <i class="fa-solid fa-user"></i> <input type="text" placeholder="First Name" id="fname"
+                    style="width: 300px; padding: 5px 5px 5px 50px;" onkeydown="FirstNameValid(this,'ferror')">
                 <span id="ferror"></span>
             </td>
         </tr>
         <br><br>
         <tr>
             <td> Last Name:</td>
-            <td><i class="fa-solid fa-user"></i> <input type="text" placeholder="Last Name"  id="lname" style="width: 300px; padding: 5px 5px 5px 50px;"
-                    onkeydown="LastNameValid(this,'lerror')">
+            <td><i class="fa-solid fa-user"></i> <input type="text" placeholder="Last Name" id="lname"
+                    style="width: 300px; padding: 5px 5px 5px 50px;" onkeydown="LastNameValid(this,'lerror')">
                 <span id="lerror"></span>
             </td>
         </tr>
         <br><br>
         <tr>
             <td> </i> Email:</td> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <td> <i class="fa-solid fa-envelope"></i><input type="email" placeholder="Email" id="email" style="width: 300px;padding: 5px 5px 5px 50px;"
-                    onkeydown="emailValid(this, 'eerror')">
+            <td> <i class="fa-solid fa-envelope"></i><input type="email" placeholder="Email" id="email"
+                    style="width: 300px;padding: 5px 5px 5px 50px;" onkeydown="emailValid(this, 'eerror')">
                 <span id="eerror"></span>
             </td>
         </tr>
         <br><br>
         <tr>
-            <td>  Mobile:</td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <td> <i class="fa-solid fa-phone"></i><input type="text" placeholder="Mobile" id="mobile" style="width: 300px; padding: 5px 5px 5px 50px;"
-                    onkeydown="MobileValid(this,'merror')">
+            <td> Mobile:</td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <td> <i class="fa-solid fa-phone"></i><input type="text" placeholder="Mobile" id="mobile"
+                    style="width: 300px; padding: 5px 5px 5px 50px;" onkeydown="MobileValid(this,'merror')">
                 <span id="merror"></span>
             </td>
         </tr>
@@ -68,33 +70,39 @@
         </tr>
         <br><br>
         <tr>
-            <td>  DOB:</td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <i class="fa-solid fa-calendar-days"></i><input type="date" value="month" style="width: 300px;padding: 5px 5px 5px 50px; " required>
+            <td> DOB:</td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <i class="fa-solid fa-calendar-days"></i><input type="date" value="month"
+                style="width: 300px;padding: 5px 5px 5px 50px; " required>
         </tr>
         <br><br>
         <tr>
-            <td>  Address:</td>&nbsp;&nbsp;&nbsp;&nbsp;
-            <td><i class="fa-solid fa-location-dot"></i> <textarea style="width:300px; padding: 5px 5px 5px 50px;" id="address" required></textarea></td>
+            <td> Address:</td>&nbsp;&nbsp;&nbsp;&nbsp;
+            <td><i class="fa-solid fa-location-dot"></i> <textarea style="width:300px; padding: 5px 5px 5px 50px;"
+                    id="address" required></textarea></td>
         </tr>
         <br><br>
         <tr>
-            <td>  City:</td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <td> <i class="fa-solid fa-city"></i><input type="text" placeholder="City" style="width: 300px; padding: 5px 5px 5px 50px;" required></td>
+            <td> City:</td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <td> <i class="fa-solid fa-city"></i><input type="text" placeholder="City"
+                    style="width: 300px; padding: 5px 5px 5px 50px;" required></td>
         </tr>
         <br><br>
         <tr>
             <td> Area Pin:</td>&nbsp;&nbsp;&nbsp;
-            <td><i class="fa-solid fa-address-book"></i> <input type="text" placeholder="Area Pin" style="width: 300px; padding: 5px 5px 5px 50px;" required></td>
+            <td><i class="fa-solid fa-address-book"></i> <input type="text" placeholder="Area Pin"
+                    style="width: 300px; padding: 5px 5px 5px 50px;" required></td>
         </tr>
         <br><br>
         <tr>
-            <td>   State:</td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <td> <i class="fa-solid fa-address-book"> </i><input type="text" placeholder="State" style="width: 300px; padding: 5px 5px 5px 50px;" required></td>
+            <td> State:</td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <td> <i class="fa-solid fa-address-book"> </i><input type="text" placeholder="State"
+                    style="width: 300px; padding: 5px 5px 5px 50px;" required></td>
         </tr>
         <br><br>
         <tr>
-            <td>  Qualification:</td>
-            <td> <i class="fa-solid fa-graduation-cap"></i><select name="Select Qualification" style="width: 200px; height: 30px; padding: 5px 5px 5px 50px;" required>
+            <td> Qualification:</td>
+            <td> <i class="fa-solid fa-graduation-cap"></i><select name="Select Qualification"
+                    style="width: 200px; height: 30px; padding: 5px 5px 5px 50px;" required>
                     <option> Select Qualification </option>
                     <option> 12th </option>
                     <option> B.E/BCOM </option>
@@ -115,15 +123,16 @@
         </tr>
         <br><br>
         <tr>
-            <td>  Password:</td>&nbsp;&nbsp;
-            <td><i class="fa-solid fa-user"></i><input type="password" placeholder="Password" id="pwd" style="width: 300px; padding: 5px 5px 5px 50px;"
-                    onkeydown="(PwdValid(this, 'perror'))">
+            <td> Password:</td>&nbsp;&nbsp;
+            <td><i class="fa-solid fa-user"></i><input type="password" placeholder="Password" id="pwd"
+                    style="width: 300px; padding: 5px 5px 5px 50px;" onkeydown="(PwdValid(this, 'perror'))">
                 <span id="perror"></span>
             </td>
         </tr>
         <br><br>
         <tr>
-            <td><input type="SUBMIT" name="SUBMIT" value="REGISTERED" style="background-color:green; color:white; padding: 10px; cursor: pointer;">
+            <td><input type="SUBMIT" name="SUBMIT" value="REGISTERED"
+                    style="background-color:green; color:white; padding: 10px; cursor: pointer;">
             </td>
         </tr>
     </form>
@@ -131,6 +140,7 @@
 
 </html>
 <script>
+    //  Basic Validation //
     function validation() {
         let fname = document.getElementById('fname').value;
         if (fname == "") {
@@ -166,8 +176,8 @@
             document.getElementById('pwd').focus();
             return false;
         }
-
     }
+    //  Advanced  Validation //
     function FirstNameValid(input, msg) {
         var name = /^[a-zA-Z].{3,6}$/
         if (name.test(input.value)) {
